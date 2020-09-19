@@ -6,35 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Helping hands</title>
     <!--  Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
     <!-- font family for header  -->
-    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">-->
  
     <!-- font awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 
     <!-- External Style Sheet -->
     <link rel="stylesheet" type="text/css" href="donation.css">
-    <style type="text/css">
-      body
-      {margin: 0;
-       padding: 0;
-      }
-
-    </style>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/font-awesome/5.0.7/css/font-awesome.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
   </head>
   <body>
-  <div class="container-fluid bg" style="padding: 0%;" id="add">
-      <div class="jumbotron " id="form1" style="margin: 0 auto;
-    width:50%;margin-top: 10%;margin-bottom: 10%;border: 2px solid white; @media only screen and (max-width: 600px) {width:80;}">
-          <h2 style="color:black;">DONATE</h2>
-          <p style="color:black;">For it is in giving that we receive</p>
-          <form class="form" action="pay.php" name="myform2" method="POST">
+      <section id="nav-bar" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand text-white" href="index.php"><i class="fas fa-handshake fa-small"></i><strong>  Give A Hand</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link ml-1 text-white" href="index.php">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ml-1">
+                  <a class="nav-link text-white " href="#">ABOUT</a>
+                </li>
+                <li class="nav-item ml-1">
+                  <a class="nav-link text-white" href="form.html">DONATE</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <img src="wave-2.svg">
+  <div class="container" style="padding: 0%;" id="add">
+      <div class="jumbotron" style="background:#9bc0fa;">
+    <!--     style="margin: 0 auto;-->
+    <!--width:70%;margin-top: 10%;margin-bottom: 10%;border: 2px solid white;">-->
+          <h1 class="title text-center">DONATE</h2>
+          <p class="text-dark text-center"><strong>For it is in giving that we receive</strong></p>
+          <form class="form" action="pay.php" name="myform2" method="POST" >
             <div class="form-group">
-              <input type="text" class="form-control" name="name" placeholder="ENTER NAME" required="">
+              <input type="text" class="form-control" name="name" id="name" placeholder="ENTER NAME" required="">
             </div>
             <div class="form-group">
               <input type="email" class="form-control" name="email" placeholder="ENTER EMAIL" required="">
@@ -45,7 +72,7 @@
             <div class="form-group">
               <input type="number" step="0.1" min=0 class="form-control" name="amount" placeholder="AMOUNT" required="">
             </div>
-            <button type="submit" class="btn btn-default" >Submit</button>
+            <button type="submit" class="btn btn-primary btn-large" >Submit</button>
           </form>
       </div>
       </div>
