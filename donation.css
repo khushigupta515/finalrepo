@@ -1,0 +1,52 @@
+.bg
+{
+	background-image: url("bgimg.jpg");
+	/* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 750px;
+  color:white;
+  
+}
+ body{
+  font-family: 'Ramabhadra', sans-serif;
+  
+  
+  
+}
+.maindiv
+{float:none;
+margin:2% auto;
+max-width: 95%;
+margin-top: 2%;}
+.maindiv
+{ background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+padding: 8% 2%;
+height: 450px;}
+h1
+{	font-size: 40px;
+	color: black;
+}
+.donation
+{
+	margin: 0% 4%;
+	color: white;
+	height: 130px;
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 2px;
+ 	border-color: grey;
+	margin-bottom: 1%;}
+  span
+{all: none;}
+
+ /*
+ $dbServername = "localhost";
+$dbUsername = "id14887458_grocerybasket";
+$dbPassword = "Momdadform7@";
+$dbName = "id14887458_helpinghands";
+ */

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Helping hands</title>
+    <!--  Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- font family for header  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+ 
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="donation.css">
+    <style type="text/css">
+      body
+      {margin: 0;
+       padding: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+  <div class="container-fluid bg" style="padding: 0%;" id="add">
+      <div class="jumbotron " id="form1" style="margin: 0 auto;
+    width:50%;margin-top: 10%;margin-bottom: 10%;border: 2px solid white; @media only screen and (max-width: 600px) {width:80;}">
+          <h2 style="color:black;">DONATE</h2>
+          <p style="color:black;">For it is in giving that we receive</p>
+          <form class="form" action="pay.php" name="myform2" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="ENTER NAME" required="">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="ENTER EMAIL" required="">
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" name="phonenumber" placeholder="ENTER PHONE NUMBER" required="">
+            </div>
+            <div class="form-group">
+              <input type="number" step="0.1" min=0 class="form-control" name="amount" placeholder="AMOUNT" required="">
+            </div>
+            <button type="submit" class="btn btn-default" >Submit</button>
+          </form>
+      </div>
+      </div>
+    </body>
+    </html>
